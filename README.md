@@ -1,10 +1,8 @@
-## mplusplus ウェブページ複製課題  
+## mplusplus ウェブページ
 
 ./  
 トップページ... ナビゲーションバー(背景は透過)、windowの大きさで動画再生(ループ)、中央にM++ロゴ(プロジェクトへリンク)、インスタグラム、twitter,facebook,vimeo,youtubeリンク  
-ナビゲーションバー... mplusplus(左よせ), news,works, Project, artist, info, who we areのリンク、windowサイズが小さい時はハンバーガーにする、ホバーで線が出る  
-  
-
+ナビゲーションバー... mplusplus(左よせ), news,works, Project, artist, info, who we areのリンク、windowサイズが小さい時はハンバーガーにする、ホバーで線が出る
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
