@@ -1,0 +1,37 @@
+{
+  "name": "public",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "yarn build && serve ./out"
+  },
+  "dependencies": {
+    "@draft-js-plugins/anchor": "^4.2.1",
+    "@draft-js-plugins/editor": "^4.1.4",
+    "@draft-js-plugins/image": "^4.1.4",
+    "@draft-js-plugins/inline-toolbar": "^4.2.1",
+    "@draft-js-plugins/video": "^4.1.3",
+    "@types/firebase": "^3.2.1",
+    "bootstrap": "^5.3.3",
+    "draft-js": "^0.11.7",
+    "firebase": "^10.12.3",
+    "next": "14.2.4",
+    "pagination": "^0.4.6",
+    "react": "^18",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-player": "^2.16.0",
+    "react-table": "^7.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3"
+  }
+}

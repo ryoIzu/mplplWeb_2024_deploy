@@ -1,0 +1,110 @@
+[debug] [2024-07-14T09:55:24.963Z] ----------------------------------------------------------------------
+[debug] [2024-07-14T09:55:24.965Z] Command:       /Users/ryoizu/.nvm/versions/node/v18.17.0/bin/node /Users/ryoizu/.nvm/versions/node/v18.17.0/bin/firebase deploy
+[debug] [2024-07-14T09:55:24.965Z] CLI Version:   13.13.2
+[debug] [2024-07-14T09:55:24.965Z] Platform:      darwin
+[debug] [2024-07-14T09:55:24.965Z] Node Version:  v18.17.0
+[debug] [2024-07-14T09:55:24.966Z] Time:          Sun Jul 14 2024 18:55:24 GMT+0900 (日本標準時)
+[debug] [2024-07-14T09:55:24.967Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-14T09:55:25.036Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-14T09:55:25.036Z] > authorizing via signed-in user (ryo.polkadot@gmail.com)
+[debug] [2024-07-14T09:55:25.037Z] [iam] checking project mplpl-website for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-14T09:55:25.038Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mplpl-website:testIamPermissions [none]
+[debug] [2024-07-14T09:55:25.038Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mplpl-website:testIamPermissions x-goog-quota-user=projects/mplpl-website
+[debug] [2024-07-14T09:55:25.038Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mplpl-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-14T09:55:25.817Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mplpl-website:testIamPermissions 200
+[debug] [2024-07-14T09:55:25.818Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mplpl-website:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-14T09:55:25.819Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mplpl-website [none]
+[debug] [2024-07-14T09:55:26.216Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mplpl-website 200
+[debug] [2024-07-14T09:55:26.216Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mplpl-website {"projectId":"mplpl-website","projectNumber":"700160719776","displayName":"mplpl-website","name":"projects/mplpl-website","resources":{"hostingSite":"mplpl-website"},"state":"ACTIVE","etag":"1_190cbfb3-7a9f-4ce5-ab65-b26b1641f6be"}
+[debug] [2024-07-14T09:55:28.177Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites pageToken=&pageSize=10
+[debug] [2024-07-14T09:55:29.082Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites 200
+[debug] [2024-07-14T09:55:29.082Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites {"sites":[{"name":"projects/mplpl-website/sites/mplpl-website","defaultUrl":"https://mplpl-website.web.app","appId":"1:700160719776:web:aea7e8ec6ab0f5fe7882c5","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-14T09:55:29.083Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:700160719776:web:aea7e8ec6ab0f5fe7882c5/config [none]
+[debug] [2024-07-14T09:55:30.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:700160719776:web:aea7e8ec6ab0f5fe7882c5/config 200
+[debug] [2024-07-14T09:55:30.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:700160719776:web:aea7e8ec6ab0f5fe7882c5/config {"projectId":"mplpl-website","appId":"1:700160719776:web:aea7e8ec6ab0f5fe7882c5","storageBucket":"mplpl-website.appspot.com","apiKey":"AIzaSyCp-XNWJIEunhZi39TYyL8uPEm1vviIkyk","authDomain":"mplpl-website.firebaseapp.com","messagingSenderId":"700160719776","measurementId":"G-C1HSSS6D5G"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-07-14T09:55:35.047Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites/mplpl-website [none]
+[debug] [2024-07-14T09:55:35.584Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites/mplpl-website 200
+[debug] [2024-07-14T09:55:35.585Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mplpl-website/sites/mplpl-website {"name":"projects/mplpl-website/sites/mplpl-website","defaultUrl":"https://mplpl-website.web.app","appId":"1:700160719776:web:aea7e8ec6ab0f5fe7882c5","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./app/components/layouts/navigationBar/navigationBar.jsx
+18:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+18:13  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./app/layout.js
+22:7  Warning: Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+./app/page.js
+63:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+63:11  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+   Generating static pages (3/5) 
+
+[info] ReferenceError: window is not defined
+    at d (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/.next/server/app/page.js:1:6187)
+    at nj (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46251)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47571)
+    at nN (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64546)
+    at nI (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47010)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47717)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61546)
+    at nN (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64546)
+    at nB (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67538)
+    at nD (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:66680) {
+  digest: '4008027572'
+}
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: window is not defined
+    at d (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/.next/server/app/page.js:1:6187)
+    at nj (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46251)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47571)
+    at nN (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64546)
+    at nI (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47010)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47717)
+    at nM (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61546)
+    at nN (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64546)
+    at nB (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67538)
+    at nD (/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:66680)
+
+[info]  ✓ Generating static pages (5/5)
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/page: /
+
+[debug] [2024-07-14T09:55:54.767Z] Error: ENOENT: no such file or directory, open '/Users/ryoizu/Desktop/workSpaces/React/mplpl_website/public/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
