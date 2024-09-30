@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+  color: azure;
+}
+.container {
+  background-color: black;
+}
+
+.content_area {
+  display: flex;
+  justify-content: right;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.info_area {
+  position: fixed;
+  width: 45%;
+  height: 100vh;
+  top: 100px;
+  left: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.info_area.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.img_area {
+  width: 55%;
+  height: 100vh;
+  padding: 10px;
+  text-align: right;
+}
+.moreInfo_area {
+  text-align: center;
+}
+.spacer {
+  height: 50px;
+}
+
+.image-container {
+  position: relative;
+  padding: 0%;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+  opacity: 0.4;
+}
+
+.image-container p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+/* 初期状態で非表示に設定 */
+.fade-in-detail {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+/* フェードイン時に表示 */
+.fade-in-detail.visible {
+  opacity: 1;
+}

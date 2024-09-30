@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.div_content {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  margin-bottom: 80px;
+
+  opacity: 0;
+  transform: translateY(40px); /* 下から上にフェードインする場合 */
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+.div_content div {
+  display: table-cell;
+}
+
+.div_date {
+  padding: 0px 50px;
+  color: rgb(135, 135, 135);
+}
+
+.div_info p {
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+#title {
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.div_info a {
+  color: rgb(135, 135, 135);
+}
+
+.div_info p,
+.div_info a {
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 1;
+}
+.div_info a {
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 1;
+}
+
+.div_info p:hover,
+.div_info a:hover {
+  color: rgb(0, 220, 255);
+}
+#title:hover {
+  color: rgb(0, 220, 255);
+}
+
+.div_detail {
+  margin-left: 10px;
+}
+.div_detail h3 {
+  color: rgb(255, 255, 255);
+}
+.div_detail p {
+  color: rgb(160, 160, 160);
+}
+
+.newsContents {
+  margin-left: 10px;
+}
+
+.newsContents p {
+  color: rgb(255, 255, 255);
+  margin-bottom: 6px;
+}
+.newsContents a {
+  color: rgb(0, 220, 255);
+}
+
+.custom-pagination {
+  background-color: rgb(0, 0, 0);
+  justify-content: center; /* 中央寄せ */
+  margin-top: 20px; /* マージンを追加 */
+}
+.custom-pagination-item {
+  background-color: #000000; /* 背景色 */
+  border-radius: 0%; /* 丸みをつける */
+  font-size: 23px;
+}
+.custom-pagination-item .page-link {
+  background-color: #000000; /* 背景色 */
+  border-color: #000000;
+  border-radius: 0%;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  transition: color 0.5s ease;
+}
+.custom-pagination-item .page-link:hover {
+  color: rgb(0, 220, 255);
+}
+.custom-pagination-item.page-item.active .page-link {
+  background-color: #000000; /* 背景色 */
+  color: rgb(135, 135, 135);
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+/* フェードイン用のクラス */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* 元の位置に移動 */
+}
+
+/* 初期状態で非表示に設定 */
+.fade-in-detail {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+/* フェードイン時に表示 */
+.fade-in-detail.visible {
+  opacity: 1;
+}

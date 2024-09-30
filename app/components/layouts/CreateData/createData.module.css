@@ -1,0 +1,29 @@
+.main {
+  border-style: solid;
+  border-color: aqua;
+  border-width: 1px;
+  margin: 5px;
+}
+.btn {
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  border-color: rgb(255, 38, 0);
+}
+
+.part {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.part p {
+  margin: 5px 10px;
+  font-size: 25px;
+}
+
+.radioBtn {
+  
+}

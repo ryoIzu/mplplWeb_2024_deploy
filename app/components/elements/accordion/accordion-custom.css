@@ -1,0 +1,60 @@
+/* accordion-custom.css */
+.custom-accordion {
+  background-color: #000000; /* 背景色を変更 */
+  padding: 30px; /* パディングを調整 */
+  width: 100%;
+}
+.accordion-header {
+  background-color: #000000; /* 背景色を変更 */
+  padding: 15px; /* パディングを調整 */
+  width: 100%;
+}
+.custom-accordion .accordion-item {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+.custom-accordion .accordion-header .accordion-button {
+  color: #ffffff; /* テキストの色を変更 */
+  background-color: transparent; /* ボタンの背景色を透明に */
+}
+
+.custom-accordion .accordion-header .accordion-button:focus {
+  box-shadow: none; /* フォーカス時のシャドウを削除 */
+}
+
+.custom-accordion .accordion-body {
+  background-color: #000000; /* 背景色を変更 */
+  color: #ffffff; /* テキストの色を変更 */
+  padding: 1px; /* パディングを調整 */
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.custom-accordion .accordion-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-accordion .accordion-header-content p {
+  margin: 0;
+}
+
+.custom-accordion .accordion-header-content a {
+  margin-left: auto;
+
+  text-decoration: none; /* 下線を削除 */
+  color: #636363; /* リンクの色を変更 */
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.custom-accordion .accordion-header-content a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+.accordion-button::after{
+  display: none;
+}
