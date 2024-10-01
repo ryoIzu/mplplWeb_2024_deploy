@@ -8,7 +8,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { slice } from "draft-js/lib/DefaultDraftBlockRenderMap";
 import { Suspense } from "react";
 
-export default function News() {
+export const News = () => {
   const { news, isLoad, newsInfo } = useContext(NewsContext);
   const [isSort, setIsSort] = useState(false);
   const params = useParams();
@@ -276,6 +276,14 @@ export default function News() {
       ) : (
         <></>
       )}
+    </Suspense>
+  );
+};
+
+export default function NewsRender() {
+  return (
+    <Suspense>
+      <News />
     </Suspense>
   );
 }
