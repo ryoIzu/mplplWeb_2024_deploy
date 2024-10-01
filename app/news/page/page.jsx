@@ -8,7 +8,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { slice } from "draft-js/lib/DefaultDraftBlockRenderMap";
 import { Suspense } from "react";
 
-export const News = () => {
+const News = () => {
   const { news, isLoad, newsInfo } = useContext(NewsContext);
   const [isSort, setIsSort] = useState(false);
   const params = useParams();
