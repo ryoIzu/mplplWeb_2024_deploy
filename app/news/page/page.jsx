@@ -13,7 +13,7 @@ export default function News() {
   const [isSort, setIsSort] = useState(false);
   const params = useParams();
   const searchParams = useSearchParams();
-  const pageNum = parseInt(searchParams.get("pageNum"), 10);
+  const pageNum = parseInt(searchParams.get("pageNum"), 10) || 1;
   const [lastPage, setLastPage] = useState(parseInt(0, 10));
   const showNewsNum = parseInt(10, 10);
   const [slicedNews, setSlicedNews] = useState([]);
